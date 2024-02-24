@@ -2,7 +2,6 @@
 
 A chat application with real-time messaging using React.js as frontend & Nest.js as backend frameworks.
 
-## Project setup & usage
 ## Run project with double click
 1. Click on start.sh
 2. Follow the link provided by the terminal
