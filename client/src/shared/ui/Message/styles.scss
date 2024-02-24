@@ -1,0 +1,64 @@
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+  &.current-user {
+    justify-content: end;
+
+    .message-content {
+      background-color: #dcf8c6;
+      order: -1;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-color: #bbb;
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+  }
+
+  &:not(.current-user) {
+    .message-content {
+      background-color: #fff;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-color: #bbb;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  }
+
+  .message-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 18px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+
+    .username {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .text {
+      margin-bottom: 5px;
+    }
+
+    .timestamp {
+      align-self: end;
+      font-size: 0.75rem;
+      color: #999;
+    }
+  }
+}

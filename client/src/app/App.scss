@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f0f0f0;
+  .chat-container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    ::-webkit-scrollbar-track {
+      background-color: #f0f0f0;
+      border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background-color: #c0c0c0;
+      border-radius: 10px;
+      border: 3px solid #f0f0f0;
+    }
+    
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+  }  
+}
